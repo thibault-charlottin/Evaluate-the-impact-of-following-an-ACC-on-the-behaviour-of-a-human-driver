@@ -1,13 +1,21 @@
 # Evaluate the impact of following an ACC on the behaviour of a human driver
 
 This repository contains all the code that you will need to reproduce the figures and models that were used to write the paper "Does following an ADAS change the behaviour of a driver?" <br>.
-The repository is organised as follwos:
+The repository is organised as follows:
+```
 📦Evaluate the impact of followign an ACC on the behaviour of a human driver
  ┣ env
  ┃ ┗ environment_without_biogeme.yml
  ┣ 📂data
  ┃ ┣ 📂raw_data
  ┃ ┣ 📂by_run
+ ┃ ┣ 📂raw_data
+ ┣ 📂out
+ ┃ ┣ 📂data
+ ┃ ┃ ┣ 📂DTW
+ ┃ ┃ ┣ 📂LC
+ ┃ ┃ ┗ 📂tests
+ ┃ ┣ 📂images
  ┃ ┣ 📂raw_data
  ┣ 📂src
  ┃ ┣ 📜add_safety_indicators.py
@@ -23,9 +31,8 @@ The repository is organised as follwos:
  ┃ ┗ 📜read_data.py
  ┣ 📜.gitignore
  ┣ 📜README.md
- ┣ 📜console.ipynb
- ┗ 📜setup.py
-
+ ┗📜console.ipynb
+```
 
 To install the necessary packages follow the following guidelines, be aware that they differ whether you are a Windows user or a Unix kernel-based OS user.
 

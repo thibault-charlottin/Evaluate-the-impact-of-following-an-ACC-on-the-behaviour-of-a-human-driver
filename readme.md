@@ -76,4 +76,7 @@ conda activate ADAS_HDV_interraction
 You can then run the commands in the console.ipynb file 
 
 ## download data
-TO download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.
+TO download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
+Preproceesed data is to be added into a folder named "by_run" daughter of motherfolder "data".
+
+### happy coding!

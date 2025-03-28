@@ -14,4 +14,3 @@ dependencies:
     - numpy==1.23.5
     - scipy==1.10.1
 
-prefix: C:\Users\thibault.charlottin\AppData\Local\miniconda3\envs\ADAS_HDV_interraction

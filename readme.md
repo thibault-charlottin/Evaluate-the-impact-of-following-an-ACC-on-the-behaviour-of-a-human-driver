@@ -45,7 +45,7 @@ cd %paste your path
 ````
 
 ````bash
-conda env create -f env/environment_without_biogeme.yml
+conda env create -f env/ADAS_HDV_interractio.yml
 ````
 
 Activate it:
@@ -65,7 +65,7 @@ cd %paste your path
 
 then type 
 ````bash
-conda env create -f env/environment_without_biogeme.yml
+conda env create -f env/ADAS_HDV_interractio.yml
 ````
 
 Activate it:

@@ -1,0 +1,114 @@
+<html>
+<head>
+<script src="http://transp-or.epfl.ch/biogeme/sorttable.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>gaps_Logit_test - Report from biogeme 3.2.14 [2025-03-28]</title>
+<meta name="keywords" content="biogeme, discrete choice, random utility">
+<meta name="description" content="Report from biogeme 3.2.14 [2025-03-28]">
+<meta name="author" content="{bv.author}">
+<style type=text/css>
+.biostyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;}
+.boundstyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;
+        color:red}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<p>biogeme 3.2.14 [2025-03-28]</p>
+<p><a href="https://www.python.org/" target="_blank">Python</a> package</p>
+<p>Home page: <a href="http://biogeme.epfl.ch" target="_blank">http://biogeme.epfl.ch</a></p>
+<p>Submit questions to <a href="https://groups.google.com/d/forum/biogeme" target="_blank">https://groups.google.com/d/forum/biogeme</a></p>
+<p><a href="http://people.epfl.ch/michel.bierlaire">Michel Bierlaire</a>, <a href="http://transp-or.epfl.ch">Transport and Mobility Laboratory</a>, <a href="http://www.epfl.ch">Ecole Polytechnique F&#233;d&#233;rale de Lausanne (EPFL)</a></p>
+<p>This file has automatically been generated on 2025-03-28 11:07:23.415601</p>
+<table>
+<tr class=biostyle><td align=right><strong>Report file</strong>:	</td><td>gaps_Logit_test.html</td></tr>
+<tr class=biostyle><td align=right><strong>Database name</strong>:	</td><td>gaps_Logit</td></tr>
+</table>
+<h1>Estimation report</h1>
+<table border="0">
+<tr class=biostyle><td align=right ><strong>Number of estimated parameters</strong>: </td> <td>9</td></tr>
+<tr class=biostyle><td align=right ><strong>Sample size</strong>: </td> <td>21255</td></tr>
+<tr class=biostyle><td align=right ><strong>Excluded observations</strong>: </td> <td>0</td></tr>
+<tr class=biostyle><td align=right ><strong>Init log likelihood</strong>: </td> <td>-23351</td></tr>
+<tr class=biostyle><td align=right ><strong>Final log likelihood</strong>: </td> <td>-7807.447</td></tr>
+<tr class=biostyle><td align=right ><strong>Likelihood ratio test for the init. model</strong>: </td> <td>31087.12</td></tr>
+<tr class=biostyle><td align=right ><strong>Rho-square for the init. model</strong>: </td> <td>0.666</td></tr>
+<tr class=biostyle><td align=right ><strong>Rho-square-bar for the init. model</strong>: </td> <td>0.665</td></tr>
+<tr class=biostyle><td align=right ><strong>Akaike Information Criterion</strong>: </td> <td>15632.89</td></tr>
+<tr class=biostyle><td align=right ><strong>Bayesian Information Criterion</strong>: </td> <td>15704.57</td></tr>
+<tr class=biostyle><td align=right ><strong>Final gradient norm</strong>: </td> <td>3.1937E-01</td></tr>
+<tr class=biostyle><td align=right ><strong>Nbr of threads</strong>: </td> <td>8</td></tr>
+<tr class=biostyle><td align=right ><strong>Relative gradient</strong>: </td> <td>1.1484943416709134e-05</td></tr>
+<tr class=biostyle><td align=right ><strong>Cause of termination</strong>: </td> <td>Relative gradient = 1.1e-05 <= 0.00012</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of function evaluations</strong>: </td> <td>10</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of gradient evaluations</strong>: </td> <td>10</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of hessian evaluations</strong>: </td> <td>9</td></tr>
+<tr class=biostyle><td align=right ><strong>Algorithm</strong>: </td> <td>Newton with trust region for simple bound constraints</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of iterations</strong>: </td> <td>9</td></tr>
+<tr class=biostyle><td align=right ><strong>Proportion of Hessian calculation</strong>: </td> <td>9/9 = 100.0%</td></tr>
+<tr class=biostyle><td align=right ><strong>Optimization time</strong>: </td> <td>0:00:06.555901</td></tr>
+</table>
+<h1>Estimated parameters</h1>
+<table border="1">
+<tr class=biostyle><th>Name</th><th>Value</th><th>Rob. Std err</th><th>Rob. t-test</th><th>Rob. p-value</th></tr>
+<tr class=biostyle><td>beta_DHW</td><td>-0.00355</td><td>0.000633</td><td>-5.61</td><td>2e-08</td></tr>
+<tr class=biostyle><td>beta_DTW</td><td>0.00212</td><td>0.000346</td><td>6.13</td><td>8.87e-10</td></tr>
+<tr class=biostyle><td>beta_constant_left</td><td>-2.09</td><td>0.0373</td><td>-56.1</td><td>0</td></tr>
+<tr class=biostyle><td>beta_constant_right</td><td>-7.73</td><td>0.335</td><td>-23.1</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L1_left</td><td>1.64</td><td>0.23</td><td>7.14</td><td>9.66e-13</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>-0.123</td><td>0.362</td><td>-0.339</td><td>0.735</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>0.148</td><td>0.388</td><td>0.382</td><td>0.702</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>-0.313</td><td>0.366</td><td>-0.853</td><td>0.394</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>2.28</td><td>0.313</td><td>7.29</td><td>3.05e-13</td></tr>
+</table>
+<h2>Correlation of coefficients</h2>
+<table border="1">
+<tr class=biostyle><th>Coefficient1</th><th>Coefficient2</th><th>Covariance</th><th>Correlation</th><th>t-test</th><th>p-value</th><th>Rob. cov.</th><th>Rob. corr.</th><th>Rob. t-test</th><th>Rob. p-value</th></tr>
+<tr class=biostyle><td>beta_DTW</td><td>beta_DHW</td><td>-4.46e-08</td><td>-0.173</td><td>6.84</td><td>7.66e-12</td><td>-4.65e-08</td><td>-0.212</td><td>7.24</td><td>4.36e-13</td></tr>
+<tr class=biostyle><td>beta_constant_left</td><td>beta_DHW</td><td>-1.17e-05</td><td>-0.459</td><td>-54.5</td><td>0</td><td>-9.31e-06</td><td>-0.394</td><td>-55.6</td><td>0</td></tr>
+<tr class=biostyle><td>beta_constant_left</td><td>beta_DTW</td><td>8.42e-07</td><td>0.0574</td><td>-55.1</td><td>0</td><td>1.11e-06</td><td>0.086</td><td>-56.2</td><td>0</td></tr>
+<tr class=biostyle><td>beta_constant_right</td><td>beta_DHW</td><td>-1.17e-05</td><td>-0.0522</td><td>-23.1</td><td>0</td><td>-4.14e-06</td><td>-0.0195</td><td>-23</td><td>0</td></tr>
+<tr class=biostyle><td>beta_constant_right</td><td>beta_DTW</td><td>8.42e-07</td><td>0.00652</td><td>-23.1</td><td>0</td><td>1.77e-07</td><td>0.00153</td><td>-23.1</td><td>0</td></tr>
+<tr class=biostyle><td>beta_constant_right</td><td>beta_constant_left</td><td>0.00105</td><td>0.0824</td><td>-16.9</td><td>0</td><td>0.00102</td><td>0.0819</td><td>-16.9</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L1_left</td><td>beta_DHW</td><td>-1.3e-05</td><td>-0.0834</td><td>7.1</td><td>1.26e-12</td><td>-1.38e-05</td><td>-0.0946</td><td>7.15</td><td>8.76e-13</td></tr>
+<tr class=biostyle><td>beta_leader_L1_left</td><td>beta_DTW</td><td>1.18e-06</td><td>0.0132</td><td>7.08</td><td>1.49e-12</td><td>1.33e-06</td><td>0.0167</td><td>7.13</td><td>1.03e-12</td></tr>
+<tr class=biostyle><td>beta_leader_L1_left</td><td>beta_constant_left</td><td>-0.000535</td><td>-0.0607</td><td>15.8</td><td>0</td><td>-0.000572</td><td>-0.0666</td><td>15.9</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L1_left</td><td>beta_constant_right</td><td>-0.000137</td><td>-0.00177</td><td>23</td><td>0</td><td>-0.000424</td><td>-0.0055</td><td>23</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>beta_DHW</td><td>-1.3e-05</td><td>-0.00262</td><td>-0.0162</td><td>0.987</td><td>-1.72e-05</td><td>-0.0751</td><td>-0.329</td><td>0.742</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>beta_DTW</td><td>1.18e-06</td><td>0.000414</td><td>-0.0169</td><td>0.986</td><td>1.94e-06</td><td>0.0155</td><td>-0.345</td><td>0.73</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>beta_constant_left</td><td>-0.000137</td><td>-0.000488</td><td>0.267</td><td>0.789</td><td>-0.000241</td><td>-0.0178</td><td>5.4</td><td>6.56e-08</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>beta_constant_right</td><td>-0.111</td><td>-0.045</td><td>1.03</td><td>0.304</td><td>-0.112</td><td>-0.92</td><td>11.1</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L1_right</td><td>beta_leader_L1_left</td><td>0.0198</td><td>0.0116</td><td>-0.239</td><td>0.811</td><td>0.0195</td><td>0.234</td><td>-4.63</td><td>3.65e-06</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_DHW</td><td>-4.49e-06</td><td>-0.0175</td><td>0.397</td><td>0.692</td><td>-1.42e-05</td><td>-0.0576</td><td>0.391</td><td>0.696</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_DTW</td><td>-6.13e-06</td><td>-0.0415</td><td>0.382</td><td>0.703</td><td>-6.79e-06</td><td>-0.0505</td><td>0.377</td><td>0.706</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_constant_left</td><td>-0.000473</td><td>-0.0324</td><td>5.8</td><td>6.44e-09</td><td>-0.00021</td><td>-0.0145</td><td>5.74</td><td>9.53e-09</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_constant_right</td><td>-7.49e-05</td><td>-0.000584</td><td>15.5</td><td>0</td><td>0.000115</td><td>0.000887</td><td>15.4</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_leader_L1_left</td><td>0.00068</td><td>0.00767</td><td>-3.34</td><td>0.000824</td><td>0.000971</td><td>0.0109</td><td>-3.32</td><td>0.000893</td></tr>
+<tr class=biostyle><td>beta_leader_L2_left</td><td>beta_leader_L1_right</td><td>0.000282</td><td>9.97e-05</td><td>0.0367</td><td>0.971</td><td>0.000634</td><td>0.00451</td><td>0.512</td><td>0.609</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_DHW</td><td>-4.49e-06</td><td>-0.000903</td><td>-0.0417</td><td>0.967</td><td>-1.03e-05</td><td>-0.0442</td><td>-0.843</td><td>0.399</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_DTW</td><td>-6.13e-06</td><td>-0.00215</td><td>-0.0424</td><td>0.966</td><td>-1.06e-06</td><td>-0.00833</td><td>-0.859</td><td>0.39</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_constant_left</td><td>-7.49e-05</td><td>-0.000265</td><td>0.24</td><td>0.81</td><td>-0.000119</td><td>-0.00869</td><td>4.83</td><td>1.36e-06</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_constant_right</td><td>-0.111</td><td>-0.0448</td><td>0.997</td><td>0.319</td><td>-0.111</td><td>-0.907</td><td>10.8</td><td>0</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_leader_L1_left</td><td>0.000282</td><td>0.000164</td><td>-0.263</td><td>0.792</td><td>0.000575</td><td>0.00682</td><td>-4.53</td><td>5.93e-06</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_leader_L1_right</td><td>0.111</td><td>0.00204</td><td>-0.0182</td><td>0.986</td><td>0.112</td><td>0.842</td><td>-0.928</td><td>0.353</td></tr>
+<tr class=biostyle><td>beta_leader_L2_right</td><td>beta_leader_L2_left</td><td>0.0225</td><td>0.00792</td><td>-0.0621</td><td>0.95</td><td>0.0254</td><td>0.178</td><td>-0.952</td><td>0.341</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_DHW</td><td>-2.94e-05</td><td>-0.147</td><td>7.66</td><td>1.84e-14</td><td>-3.79e-05</td><td>-0.191</td><td>7.3</td><td>2.87e-13</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_DTW</td><td>-6.92e-06</td><td>-0.0602</td><td>7.64</td><td>2.11e-14</td><td>-4.65e-06</td><td>-0.0429</td><td>7.28</td><td>3.22e-13</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_constant_left</td><td>-0.00692</td><td>-0.61</td><td>13.6</td><td>0</td><td>-0.00734</td><td>-0.629</td><td>13</td><td>0</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_constant_right</td><td>-0.00692</td><td>-0.0693</td><td>21.6</td><td>0</td><td>-0.00942</td><td>-0.0898</td><td>20.9</td><td>0</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_leader_L1_left</td><td>0.00554</td><td>0.0802</td><td>1.77</td><td>0.0767</td><td>0.0063</td><td>0.0876</td><td>1.73</td><td>0.0843</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_leader_L1_right</td><td>0.00554</td><td>0.00252</td><td>0.326</td><td>0.745</td><td>0.0082</td><td>0.0723</td><td>5.21</td><td>1.84e-07</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_leader_L2_left</td><td>0.00242</td><td>0.0212</td><td>4.44</td><td>8.96e-06</td><td>0.00302</td><td>0.0249</td><td>4.33</td><td>1.48e-05</td></tr>
+<tr class=biostyle><td>beta_mean_speed_delta</td><td>beta_leader_L2_right</td><td>0.00242</td><td>0.0011</td><td>0.35</td><td>0.727</td><td>0.00443</td><td>0.0386</td><td>5.49</td><td>4.01e-08</td></tr>
+</table>
+<p>Smallest eigenvalue: 0.0181847</p>
+<p>Largest eigenvalue: 7.79232e+06</p>
+<p>Condition number: 4.28509e+08</p>
+</html>

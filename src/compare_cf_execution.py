@@ -31,7 +31,15 @@ def merge_df_trajs(path_list,glob_trajs):
 
 
 def compare_groups_statistics(traj_merged):
-
+    """
+    test if the mean DHW per speed range differs accros leader type
+    
+    input:
+    - traj_merged : the dataframe containing all the speed deltas accelerations and corresponding leader type
+    
+    returns :
+    - summary_df : a dataframe that contains all the tests results per speed range and leader type
+    """
     traj_merged = traj_merged[(traj_merged['THW'] > 0) & (traj_merged['THW'] < 10)]
     traj_merged['speed_group'] = pd.cut(x=traj_merged['speed-kf'], 
                                         bins=[k * 5 for k in range(int(max(traj_merged['speed-kf']) / 5) + 1)])

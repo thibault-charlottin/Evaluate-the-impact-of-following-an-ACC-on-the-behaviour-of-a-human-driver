@@ -81,6 +81,15 @@ def compute_DRAC(df):
 
 
 def process_file(data,file_path):
+    """
+    add surrogate safety indicators
+    
+    input:
+    - data : trajecory dataframe
+    - path_out : savepath of the updated trajectory dataframe with the TTC and DRAC computed
+    
+    returns 
+    None"""
     try:
         data = compute_DRAC(data)
         data = compute_TTC(data)

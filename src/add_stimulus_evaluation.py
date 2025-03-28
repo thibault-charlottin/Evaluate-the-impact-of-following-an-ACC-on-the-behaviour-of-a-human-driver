@@ -4,7 +4,13 @@ import numpy as np
 from multiprocessing import Pool, cpu_count
 
 def compute_DV(df):
-    '''Compute speeddelta with leader.'''
+    '''Compute speeddelta with leader.
+    
+    input
+    - df : the trajectoryd ataset
+    
+    returns
+    - df_out : the dataframe with the speeddelta column added'''
     df_out = pd.DataFrame(columns=df.columns)
     df_out['speeddelta'] = []
 

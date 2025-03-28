@@ -2,6 +2,15 @@ import pandas as pd
 import numpy as np
 
 def detect_lane_change(df):
+    '''
+    detects lane changing
+    
+    input
+    - df : trajectory datasrt
+
+    returns
+    - out : trajectory dataset with the flags LC detected, overtake and vehicle in its new lane
+    '''
     out = pd.DataFrame(columns=df.columns)
     for k in pd.unique(df['ID']):
         data = df[df['ID'] == k]
@@ -19,6 +28,7 @@ def detect_lane_change(df):
         
         out = pd.concat([out, data])
     return out
+
 def assign_type(row):
     if row['ACC']=='Yes':
         return 'ACC'

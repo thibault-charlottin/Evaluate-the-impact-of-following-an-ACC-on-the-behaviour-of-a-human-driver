@@ -1,0 +1,9 @@
+beta_DHW = -0.0035529296633667394
+beta_DTW = 0.002121697551569784
+beta_constant_left = -2.0934004740102665
+beta_constant_right = -7.725237867802356
+beta_leader_L1_left = 1.640409747234541
+beta_leader_L1_right = -0.12278044165279481
+beta_leader_L2_left = 0.14841550247893812
+beta_leader_L2_right = -0.31256515959272435
+beta_mean_speed_delta = 2.2822037285494248

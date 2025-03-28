@@ -1,0 +1,9 @@
+,speed_group,p-value,stat,significant,order
+0,"(0, 5]",0.381553175555542,1.9270101050083748,False,
+1,"(5, 10]",9.890848685573975e-05,18.442631021044896,True,"['HDV following HDV', 'HDV following ACC', 'HDV following AV']"
+2,"(10, 15]",1.0477848744686602e-12,55.16868564710908,True,"['HDV following HDV', 'HDV following ACC', 'HDV following AV']"
+3,"(15, 20]",0.0003320563418552792,16.02041179812515,True,"['HDV following HDV', 'HDV following AV', 'HDV following ACC']"
+4,"(20, 25]",2.073191706700879e-24,109.06590584954486,True,"['HDV following HDV', 'HDV following AV', 'HDV following ACC']"
+5,"(25, 30]",4.6522700077427225e-08,33.766650939526016,True,"['HDV following AV', 'HDV following HDV', 'HDV following ACC']"
+6,"(30, 35]",0.23283485765030426,2.914851684317502,False,
+7,"(35, 40]",1.0,0.0,False,

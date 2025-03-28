@@ -48,17 +48,3 @@ def construct_Logit_DF(trajs,dtw_df):
     ).reset_index()
     dtw_df = dtw_df.merge(trajs, left_on=['id','leader'], right_on=['ID','leader'], how='left')
     return dtw_df
-
-logit_df = pd.DataFrame()
-path_list = ['294_L1_by_run/','294_L2_by_run/','90_94_static_by_run/','90_94_moving_by_run/']
-glob_dtw = 'out/data/DTW/'
-glob_trajs = 'data/by_run/'
-for p in path_list:
-    for f in os.listdir(glob_dtw+p):
-        trajs = pd.read_csv(glob_trajs+p+f)
-        dtw = pd.read_csv(glob_dtw+p+f)
-        trajs = compute_speed_diff(trajs)
-        loc_logit = construct_Logit_DF(trajs,dtw)
-        loc_logit['location'] = [p for k in range(len(loc_logit['id']))]
-        logit_df = pd.concat([logit_df,loc_logit])
-logit_df.to_csv('out/data/LC_data/logit_df.csv')

@@ -191,13 +191,3 @@ def test_acceleration_differences(traj_merged):
     results_df = pd.DataFrame(results)
     return results_df
 
-
-
-
-path_list = ['294_L1_by_run/','90_94_static_by_run/','90_94_moving_by_run/']
-glob_trajs = 'data/by_run/'
-merged = merge_df_trajs(path_list,glob_trajs)
-merged.reset_index(inplace = True, drop = True)
-results_df = test_acceleration_differences(merged)
-results_df.to_csv('speedelta_test.csv')
-plot_response_vs_stimulus(merged)

@@ -1,0 +1,17 @@
+name: ADAS_HDV_interraction
+channels:
+  - defaults
+dependencies:
+  - dtaidistance
+  - jupyter
+  - matplotlib
+  - pandas
+  - python=3.10
+  - scipy
+  - seaborn
+  - pip:
+    - biogeme
+    - numpy==1.23.5
+    - scipy==1.10.1
+
+prefix: C:\Users\thibault.charlottin\AppData\Local\miniconda3\envs\ADAS_HDV_interraction

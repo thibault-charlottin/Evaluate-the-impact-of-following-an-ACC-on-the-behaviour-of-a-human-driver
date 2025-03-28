@@ -8,10 +8,26 @@ import seaborn as sns
 sns.set_theme()
 import os
 def differencing_custom(series, smooth=0.1):
-    # Appliquer la différenciation de manière simple avec np.diff
+    # differentiates the positions vectors to overrule the dtaidistance error
     return np.diff(series)
 
 def test_car_following_by_time(data, id1, id2, tau, window, step):
+    """
+    DTW test if at a given window vehicle id2 is car following vehicle id1
+    rool over the entire trajecory using a moving window (in the paper window size 30s stride 5s)
+
+    inputs
+    - data: trajectory dataset
+    - id1 : leader id
+    - id2 : follower id
+    - tau : translation time
+    - window : size of the moving window
+    - step : size of the stride
+
+    returns
+    - time : array with all the ending points of all the windows
+    - DTW : array containing for each window the Dynamic Time Warping value between the two trajectories over the given window
+    """
     x1 = data[data['ID'] == id1]
     x2 = data[(data['ID'] == id2)]
     
@@ -37,6 +53,17 @@ def test_car_following_by_time(data, id1, id2, tau, window, step):
     return time, DTW
 
 def create_dtw_by_time_df(data,tau,window,step):
+    """
+    runs the test_car_following_by_time over the entire trajectory dataset
+    
+    inputs
+    - data : trajectory dataset
+    - tau : translation time
+    - window : size of the moving window
+    - step : size of the stride
+    
+    returns
+    - df_out : dataframe with the"""
     time_list,id_list,leader_list,DTW_list = [],[],[],[]
     df_lead_follow_pairs = data[['leader', 'ID']].drop_duplicates()
     df_lead_follow_pairs.dropna(inplace=True)

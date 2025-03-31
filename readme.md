@@ -3,7 +3,7 @@
 This repository contains all the code that you will need to reproduce the figures and models that were used to write the paper "Does following an ADAS change the behaviour of a driver?" <br>.
 The repository is organised as follows:
 ```
-📦Evaluate the impact of followign an ACC on the behaviour of a human driver
+📦Evaluate the impact of following an ACC on the behaviour of a human driver
  ┣ env
  ┃ ┗ environment_without_biogeme.yml
  ┣ 📂data

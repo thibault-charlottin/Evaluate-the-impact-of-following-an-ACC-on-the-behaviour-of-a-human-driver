@@ -4,19 +4,17 @@ This repository contains all the code that you will need to reproduce the figure
 The repository is organised as follows:
 ```
 📦Evaluate the impact of following an ACC on the behaviour of a human driver
- ┣ env
- ┃ ┗ environment_without_biogeme.yml
  ┣ 📂data
  ┃ ┣ 📂raw_data
- ┃ ┣ 📂by_run
- ┃ ┣ 📂raw_data
+ ┃ ┗ 📂by_run
  ┣ 📂out
  ┃ ┣ 📂data
  ┃ ┃ ┣ 📂DTW
  ┃ ┃ ┣ 📂LC
  ┃ ┃ ┗ 📂tests
- ┃ ┣ 📂images
- ┃ ┣ 📂raw_data
+ ┃ ┗ 📂images
+ ┣ 📂env
+ ┃ ┗ 📜ADAS_HDV_interraction.yml
  ┣ 📂src
  ┃ ┣ 📜add_safety_indicators.py
  ┃ ┣ 📜add_stimulus_evaluation.py
@@ -46,7 +44,7 @@ cd %paste your path
 ````
 
 ````bash
-conda env create -f env/ADAS_HDV_interractio.yml
+conda env create -f env/ADAS_HDV_interraction.yml
 ````
 
 Activate it:
@@ -66,7 +64,7 @@ cd %paste your path
 
 then type 
 ````bash
-conda env create -f env/ADAS_HDV_interractio.yml
+conda env create -f env/ADAS_HDV_interraction.yml
 ````
 
 Activate it:
@@ -77,7 +75,7 @@ conda activate ADAS_HDV_interraction
 You can then run the commands in the console.ipynb file 
 
 ## download data
-TO download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
-Preproceesed data is to be added into a folder named "by_run" daughter of motherfolder "data".
+To download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
+Preprocessed data is to be added into a folder named "by_run" daughter of the mother folder "data".
 
 ### happy coding!

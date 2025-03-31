@@ -46,7 +46,7 @@ cd %paste your path
 ````
 
 ````bash
-conda env create -f env/ADAS_HDV_interractio.yml
+conda env create -f env/ADAS_HDV_interraction.yml
 ````
 
 Activate it:
@@ -66,7 +66,7 @@ cd %paste your path
 
 then type 
 ````bash
-conda env create -f env/ADAS_HDV_interractio.yml
+conda env create -f env/ADAS_HDV_interraction.yml
 ````
 
 Activate it:
@@ -77,7 +77,7 @@ conda activate ADAS_HDV_interraction
 You can then run the commands in the console.ipynb file 
 
 ## download data
-TO download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
-Preproceesed data is to be added into a folder named "by_run" daughter of motherfolder "data".
+To download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
+Preprocessed data is to be added into a folder named "by_run" daughter of the mother folder "data".
 
 ### happy coding!

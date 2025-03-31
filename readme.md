@@ -8,15 +8,13 @@ The repository is organised as follows:
  ┃ ┗ environment_without_biogeme.yml
  ┣ 📂data
  ┃ ┣ 📂raw_data
- ┃ ┣ 📂by_run
- ┃ ┣ 📂raw_data
+ ┃ ┗ 📂by_run
  ┣ 📂out
  ┃ ┣ 📂data
  ┃ ┃ ┣ 📂DTW
  ┃ ┃ ┣ 📂LC
  ┃ ┃ ┗ 📂tests
- ┃ ┣ 📂images
- ┃ ┣ 📂raw_data
+ ┃ ┗ 📂images
  ┣ 📂src
  ┃ ┣ 📜add_safety_indicators.py
  ┃ ┣ 📜add_stimulus_evaluation.py

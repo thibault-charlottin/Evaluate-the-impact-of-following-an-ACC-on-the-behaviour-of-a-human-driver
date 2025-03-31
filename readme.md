@@ -34,12 +34,13 @@ The repository is organised as follows:
  ┗📜console.ipynb
 ```
 
-To install the necessary packages follow the following guidelines, be aware that they differ whether you are a Windows user or a Unix kernel-based OS user.
+To install the necessary packages, follow the guidelines below. Be aware that they differ depending on whether you are a Windows user or a Unix kernel-based OS user.
 
 ### Unix distributions/MacOS installation
 
-Copy your local path to this repository
-Then open the command prompt
+Copy your local path to this repository.
+Then open the command prompt.
+
 ````bash
 cd %paste your path
 ````
@@ -56,8 +57,8 @@ conda activate ADAS_HDV_interraction
 You can then run the commands in the console.ipynb file 
 
 ### Windows installation
-Copy your local path to this repository
-Open Anaconda navigator
+Copy your local path to this repository.
+Open Anaconda navigator.
 Open CMD.exe prompt and type
 ````bash
 cd %paste your path

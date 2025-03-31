@@ -1,1 +1,3 @@
 data/by_run/
+env/test_env.yml
+src/__pycache__/

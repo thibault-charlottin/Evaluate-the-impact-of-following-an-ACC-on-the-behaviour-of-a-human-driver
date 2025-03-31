@@ -2,16 +2,15 @@ name: ADAS_HDV_interraction
 channels:
   - defaults
 dependencies:
-  - jupyter
-  - matplotlib
-  - pandas
+  - jupyter==1.1.1
+  - matplotlib==3.10.1
+  - pandas==2.2.3
   - python=3.10
-  - pip
-  - scipy
-  - seaborn
+  - pip==25.0.1
+  - scipy==1.15.2
+  - seaborn==0.13.2
+  - conda-forge::dtaidistance==2.3.13
   - pip:
-    - biogeme
+    - biogeme==3.2.14
     - numpy==1.23.5
     - scipy==1.10.1
-    - dtaidistance
-

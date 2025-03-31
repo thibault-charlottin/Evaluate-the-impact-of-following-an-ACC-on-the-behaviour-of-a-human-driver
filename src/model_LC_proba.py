@@ -115,6 +115,6 @@ def logit_model(gaps_logit):
     # Biogeme estimation
     biogeme = bio.BIOGEME(database, model)
     biogeme.modelName = 'gaps_Logit_test'
-
+    biogeme.algorithm = 'scipy'
     results = biogeme.estimate()
     return results

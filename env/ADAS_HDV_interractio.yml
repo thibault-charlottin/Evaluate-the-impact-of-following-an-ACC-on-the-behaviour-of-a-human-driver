@@ -13,4 +13,4 @@ dependencies:
   - pip:
     - biogeme==3.2.14
     - numpy==1.23.5
-    - scipy==1.10.1
+    - scipy==1.15.2

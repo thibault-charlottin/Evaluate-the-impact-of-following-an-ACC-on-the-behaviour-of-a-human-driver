@@ -1,9 +1,9 @@
-# Evaluate the impact of following an ACC on the behaviour of a human driver
+# Evaluate the impact of following an ADAS on the behaviour of a human driver
 
 This repository contains all the code that you will need to reproduce the figures and models that were used to write the paper "Does following an ADAS change the behaviour of a driver?" <br>.
 The repository is organised as follows:
 ```
-📦Evaluate the impact of following an ACC on the behaviour of a human driver
+📦Evaluate the impact of following an ADAS on the behaviour of a human driver
  ┣ 📂data
  ┃ ┣ 📂raw_data
  ┃ ┗ 📂by_run
@@ -13,6 +13,8 @@ The repository is organised as follows:
  ┃ ┃ ┣ 📂LC
  ┃ ┃ ┗ 📂tests
  ┃ ┗ 📂images
+ ┣ 📂demo
+ ┃ ┗ 📜demo.ipynb
  ┣ 📂env
  ┃ ┗ 📜ADAS_HDV_interraction.yml
  ┣ 📂src
@@ -31,6 +33,8 @@ The repository is organised as follows:
  ┣ 📜README.md
  ┗📜console.ipynb
 ```
+
+To run the code, use the notebook "console.ipynb". To run an example of the preprocessing, run "demo/demo.ipynb"
 
 To install the necessary packages, follow the guidelines below. Be aware that they differ depending on whether you are a Windows user or a Unix kernel-based OS user.
 

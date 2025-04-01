@@ -20,19 +20,19 @@ def compute_TTC(df):
     df_out['TTC'] = [] ; 
     for t in pd.unique(df['time']):
         at_t = df[df['time']==t]
-        for lane in pd.unique(at_t['lane-kf']):
-            lane_at_t = at_t[at_t['lane-kf']==lane]
+        for lane in pd.unique(at_t['lane_kf']):
+            lane_at_t = at_t[at_t['lane_kf']==lane]
             lane_at_t.sort_values(by = 'r', ascending = True, inplace = True)
             lane_at_t = lane_at_t.reset_index(drop=True)
             TTC= []
-            for k in range(len(lane_at_t['ID'])):
+            for k in range(len(lane_at_t['id'])):
                 if lane_at_t['leader'][k]>0 :
-                    lead_df = lane_at_t[lane_at_t['ID']==lane_at_t['leader'][k]]
+                    lead_df = lane_at_t[lane_at_t['id']==lane_at_t['leader'][k]]
                     lead_df.reset_index(inplace=True,drop=True)
-                    ID_df = lane_at_t[lane_at_t['ID']==lane_at_t['ID'][k]]
-                    ID_df.reset_index(inplace=True,drop=True)
-                    if lead_df['speed-kf'][0]<ID_df['speed-kf'][0]:
-                        TTC.append((ID_df['DHW'][0]-lead_df['length-smoothed'][0])/(ID_df['speed-kf'][0]-lead_df['speed-kf'][0]))
+                    id_df = lane_at_t[lane_at_t['id']==lane_at_t['id'][k]]
+                    id_df.reset_index(inplace=True,drop=True)
+                    if lead_df['speed_kf'][0]<id_df['speed_kf'][0]:
+                        TTC.append((id_df['DHW'][0]-lead_df['length_smoothed'][0])/(id_df['speed_kf'][0]-lead_df['speed_kf'][0]))
                     else: 
                         TTC.append(np.nan)
                 else: 
@@ -58,19 +58,19 @@ def compute_DRAC(df):
     df_out['TTC'] = [] ; 
     for t in pd.unique(df['time']):
         at_t = df[df['time']==t]
-        for lane in pd.unique(at_t['lane-kf']):
-            lane_at_t = at_t[at_t['lane-kf']==lane]
+        for lane in pd.unique(at_t['lane_kf']):
+            lane_at_t = at_t[at_t['lane_kf']==lane]
             lane_at_t.sort_values(by = 'r', ascending = True, inplace = True)
             lane_at_t = lane_at_t.reset_index(drop=True)
             DRAC= []
-            for k in range(len(lane_at_t['ID'])):
+            for k in range(len(lane_at_t['id'])):
                 if lane_at_t['leader'][k]>0 :
-                    lead_df = lane_at_t[lane_at_t['ID']==lane_at_t['leader'][k]]
+                    lead_df = lane_at_t[lane_at_t['id']==lane_at_t['leader'][k]]
                     lead_df.reset_index(inplace=True,drop=True)
-                    ID_df = lane_at_t[lane_at_t['ID']==lane_at_t['ID'][k]]
-                    ID_df.reset_index(inplace=True,drop=True)
-                    if lead_df['speed-kf'][0]<ID_df['speed-kf'][0]:
-                        DRAC.append(((ID_df['speed-kf'][0]-lead_df['speed-kf'][0])**2)/(2*(ID_df['DHW'][0]-lead_df['length-smoothed'][0])))
+                    id_df = lane_at_t[lane_at_t['id']==lane_at_t['id'][k]]
+                    id_df.reset_index(inplace=True,drop=True)
+                    if lead_df['speed_kf'][0]<id_df['speed_kf'][0]:
+                        DRAC.append(((id_df['speed_kf'][0]-lead_df['speed_kf'][0])**2)/(2*(id_df['DHW'][0]-lead_df['length_smoothed'][0])))
                     else: 
                         DRAC.append(np.nan)
                 else: 

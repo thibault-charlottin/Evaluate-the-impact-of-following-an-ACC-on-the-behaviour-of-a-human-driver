@@ -1,3 +1,6 @@
 data/by_run/
 env/test_env.yml
 src/__pycache__/
+demo/1.csv
+demo/example_cleanned.csv
+demo/Third_Generation_Simulation_Data__TGSIM__I-90_I-94_Stationary_Trajectories_20250401.csv

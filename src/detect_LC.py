@@ -12,17 +12,17 @@ def detect_lane_change(df):
     - out : trajectory dataset with the flags LC detected, overtake and vehicle in its new lane
     '''
     out = pd.DataFrame(columns=df.columns)
-    for k in pd.unique(df['ID']):
-        data = df[df['ID'] == k]
-        lane_change_started = [True if data['lane-kf'].iloc[i + 1] != data['lane-kf'].iloc[i] else False for i in range(len(data) - 1)]
+    for k in pd.unique(df['id']):
+        data = df[df['id'] == k]
+        lane_change_started = [True if data['lane_kf'].iloc[i + 1] != data['lane_kf'].iloc[i] else False for i in range(len(data) - 1)]
         lane_change_started.append(False)  # Add False for the last row
         data['Lane Change started'] = lane_change_started
         
-        lane_change_occurred = [True if data['lane-kf'].iloc[i - 1] != data['lane-kf'].iloc[i] else False for i in range(1, len(data))]
+        lane_change_occurred = [True if data['lane_kf'].iloc[i - 1] != data['lane_kf'].iloc[i] else False for i in range(1, len(data))]
         lane_change_occurred.insert(0, False)  # Insert False for the first row
         data['Lane Change occurred'] = lane_change_occurred
         
-        overtake = [True if np.abs(data['lane-kf'].iloc[i - 1]) > np.abs(data['lane-kf'].iloc[i]) else False for i in range(1, len(data))]
+        overtake = [True if np.abs(data['lane_kf'].iloc[i - 1]) > np.abs(data['lane_kf'].iloc[i]) else False for i in range(1, len(data))]
         overtake.insert(0, False)  # Insert False for the first row
         data['Overtake'] = overtake
         

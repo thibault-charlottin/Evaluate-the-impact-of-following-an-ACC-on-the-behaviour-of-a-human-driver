@@ -16,16 +16,16 @@ def compute_DV(df):
 
     for t in pd.unique(df['time']):
         at_t = df[df['time'] == t]
-        for lane in pd.unique(at_t['lane-kf']):
-            lane_at_t = at_t[at_t['lane-kf'] == lane]
+        for lane in pd.unique(at_t['lane_kf']):
+            lane_at_t = at_t[at_t['lane_kf'] == lane]
             lane_at_t.sort_values(by='r', ascending=False, inplace=True)
             lane_at_t = lane_at_t.reset_index(drop = True)
             Delta_speed = []
-            for k in range(len(lane_at_t['ID'])):
+            for k in range(len(lane_at_t['id'])):
                 if lane_at_t['leader'][k] > 0:
-                    lead_df = lane_at_t[lane_at_t['ID'] == lane_at_t['leader'][k]]
-                    ID_df = lane_at_t[lane_at_t['ID'] == lane_at_t['ID'][k]]
-                    Delta_speed.append(list(lead_df['speed-kf'])[0] - list(ID_df['speed-kf'])[0])
+                    lead_df = lane_at_t[lane_at_t['id'] == lane_at_t['leader'][k]]
+                    ID_df = lane_at_t[lane_at_t['id'] == lane_at_t['id'][k]]
+                    Delta_speed.append(list(lead_df['speed_kf'])[0] - list(ID_df['speed_kf'])[0])
                 else:
                     Delta_speed.append(np.nan)
             lane_at_t['speeddelta'] = Delta_speed

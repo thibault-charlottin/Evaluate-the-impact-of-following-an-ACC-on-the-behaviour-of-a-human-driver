@@ -12,5 +12,5 @@ dependencies:
   - conda-forge::dtaidistance==2.3.13
   - pip:
     - biogeme==3.2.14
-    - numpy==1.23.5
+    - numpy==2.0.0
     - scipy==1.15.2

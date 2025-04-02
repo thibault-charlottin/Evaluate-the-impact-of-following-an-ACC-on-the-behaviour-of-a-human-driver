@@ -80,5 +80,5 @@ def clean_run(run, df_path, path_out):
 
 def clean_data(df_path, path_out):
     df = pd.read_csv(df_path)
-    for run in df['run_index']:
+    for run in pd.unique(df['run_index']):
         clean_run(run, df_path, path_out)

@@ -1,6 +1,6 @@
 # Evaluate the impact of following an ADAS on the behaviour of a human driver
 
-This repository contains all the code that you will need to reproduce the figures and models that were used to write the paper "Does following an ADAS change the behaviour of a driver?" <br>.
+This repository contains all the code that you will need to reproduce the figures and models that were used to write the paper "Does following an ADAS change the behaviour of a driver?" <br>
 The repository is organised as follows:
 ```
 📦Evaluate the impact of following an ADAS on the behaviour of a human driver

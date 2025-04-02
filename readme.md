@@ -80,6 +80,6 @@ You can then run the commands in the console.ipynb file
 
 ## download data
 To download the TGSIM dataset, follow the links in the data/raw_data folder. Preprocessed data is available on request.<br>
-Preprocessed data is to be added into a folder named "by_run" daughter of the mother folder "data".
+Preprocessed data is to be added into the folder named "by_run" daughter of the mother folder "data".
 
 ### happy coding!

@@ -17,7 +17,7 @@ def merge_df_trajs(path_list,glob_trajs):
     - glob_trajs : path of the datasheets
     
     returns 
-    - merge_df : dataframe containing all trajectories and indicators with a columns describint the 
+    - merge_df : dataframe containing all trajectories and indicators with columns describing the 
     experiment they were taken from"""
     merge_df = pd.DataFrame()
     for p in path_list:

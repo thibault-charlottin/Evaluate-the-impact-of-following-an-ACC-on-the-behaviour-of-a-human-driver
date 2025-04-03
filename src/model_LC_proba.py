@@ -7,6 +7,15 @@ from biogeme.models import loglogit
 import biogeme.database as bdb
 
 def prepare_data(path):
+    """
+    final preprocessing of the dataframe before estimating the logit
+
+    input:
+    - path : the location of the input dataset
+
+    returns:
+    - gaps_logit : final input dataset for the logit
+    """
     # Load data
     gaps_logit = pd.read_csv(path)  # Use absolute paths
     large_ids = pd.unique(gaps_logit[gaps_logit['is_large_vehicle']==True]['ID'])
@@ -57,6 +66,15 @@ def prepare_data(path):
 
 
 def logit_model(gaps_logit):
+    """
+    estimates the impact of the utilities on lane-changing probability
+
+    input:
+    - gaps_logit : input dataset for the logit
+
+    returns:
+    - results : Biogeme object containing all the estimated results 
+    """
     database = bdb.Database('gaps_Logit', gaps_logit)
 
 

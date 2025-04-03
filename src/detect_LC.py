@@ -6,7 +6,7 @@ def detect_lane_change(df):
     detects lane changing
     
     input
-    - df : trajectory datasrt
+    - df : trajectory dataset
 
     returns
     - out : trajectory dataset with the flags LC detected, overtake and vehicle in its new lane
